@@ -73,8 +73,6 @@
  */
 ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Exo:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
     <div id="page-wrapper" class="container_12"><div id="page">
 
