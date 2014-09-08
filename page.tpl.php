@@ -74,7 +74,7 @@
 ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <div id="page-wrapper" class="container_12"><div id="page">
+    <div id="page-wrapper" class="container_12 wrappers"><div id="page">
 
 
     <div id="header" class="grid_12"><div class="section clearfix">
@@ -122,7 +122,7 @@
 
     <?php print $messages; ?>
 
-    <div id="main-wrapper"><div id="main" class="clearfix">
+    <div id="main-wrapper"><div id="main" class="clearfix wrappers">
 
       <div id="content"  class="grid_8" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
@@ -152,7 +152,7 @@
     </div></div> <!-- /#main, /#main-wrapper -->
     
     <!-- start site top wrapper -->
-    <div id="site-top-wrapper" class="mywrapper"><div class="clearfix">
+    <div id="site-top-wrapper" class="mywrapper wrappers"><div class="clearfix">
 
         <div id="site-top-big" class="grid_8 mywrapper_content"><div class="section">
           <?php print render($page['site_top_big']); ?>
@@ -167,7 +167,7 @@
     
     <!-- start four column wrapper -->
     
-    <div id="four-column-wrapper" class="grid_12" class="mywrapper">
+    <div id="four-column-wrapper" class="grid_12" class="wrappers">
     
         <div id="four-column-one" class="grid_3"><div class="section">
           <?php print render($page['four_column_one']); ?>
@@ -189,7 +189,7 @@
     <!-- end four column wrapper -->
     
     <!-- start site middle wrapper -->
-    <div id="site-middle-wrapper" class="mywrapper"><div class="clearfix">
+    <div id="site-middle-wrapper" class="wrappers"><div class="clearfix">
 
         <div id="site-middle-one" class="grid_4 mywrapper_content"><div class="section">
           <?php print render($page['site_middle_one']); ?>
