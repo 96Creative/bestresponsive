@@ -1,0 +1,40 @@
+name = Responsive Seven
+description = Responsive Drupal 7 theme, made by Zsolt Papp
+version = 1.0
+core = 7.x
+engine = phptemplate
+
+
+stylesheets[all][] = layout.css
+stylesheets[all][] = base.css
+stylesheets[all][] = grid.css
+stylesheets[all][] = responsive.css
+stylesheets[all][] = style.css
+
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[site_top_big] = Top Big
+regions[site_top_small] = Top Small
+regions[site_middle_one] = Middle One
+regions[site_middle_two] = Middle Two
+regions[site_middle_three] = Middle Three
+regions[four_column_one] = Four column 1
+regions[four_column_two] = Four column 2
+regions[four_column_three] = Four column 3
+regions[four_column_four] = Four column 4
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
