@@ -80,7 +80,7 @@
     <div id="header" class="grid_12"><div class="section clearfix">
 
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="grid_1">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
@@ -121,10 +121,24 @@
     <?php endif; ?>
 
     <?php print $messages; ?>
+    
+    <!-- start site top wrapper -->
+    <div id="site-top-wrapper" class="wrappers"><div class="clearfix">
 
-    <div id="main-wrapper"><div id="main" class="clearfix wrappers">
+        <div id="site-top-big" class="grid_8"><div class="section">
+          <?php print render($page['site_top_big']); ?>
+        </div></div>
+        
+        <div id="site-top-small" class="grid_4"><div class="section">
+          <?php print render($page['site_top_small']); ?>
+        </div></div>
+    
+    </div></div>
+    <!-- end site top wrapper -->
 
-      <div id="content"  class="grid_8" class="column"><div class="section">
+    <div id="main-wrapper"><div id="main" class="wrappers">
+
+      <div id="content"  class="grid_6" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
@@ -138,36 +152,22 @@
       </div></div> <!-- /.section, /#content -->
 
       <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="grid_4" class="column-sidebar"><div class="section">
+        <div id="sidebar-first" class="grid_3" class="column-sidebar"><div class="section">
           <?php print render($page['sidebar_first']); ?>
         </div></div> <!-- /.section, /#sidebar-first -->
       <?php endif; ?>
 
       <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="grid_4" class="column_sidebar"><div class="section">
+        <div id="sidebar-second" class="grid_3" class="column_sidebar"><div class="section">
           <?php print render($page['sidebar_second']); ?>
         </div></div> <!-- /.section, /#sidebar-second -->
       <?php endif; ?>
 
     </div></div> <!-- /#main, /#main-wrapper -->
     
-    <!-- start site top wrapper -->
-    <div id="site-top-wrapper" class="mywrapper wrappers"><div class="clearfix">
-
-        <div id="site-top-big" class="grid_8 mywrapper_content"><div class="section">
-          <?php print render($page['site_top_big']); ?>
-        </div></div>
-        
-        <div id="site-top-small" class="grid_4 mywrapper_content"><div class="section">
-          <?php print render($page['site_top_small']); ?>
-        </div></div>
-    
-    </div><div>
-    <!-- end site top wrapper -->
-    
     <!-- start four column wrapper -->
     
-    <div id="four-column-wrapper" class="grid_12" class="wrappers">
+    <div id="four-column-wrapper" class="wrappers"><div class="clearfix">
     
         <div id="four-column-one" class="grid_3"><div class="section">
           <?php print render($page['four_column_one']); ?>
@@ -185,28 +185,28 @@
           <?php print render($page['four_column_four']); ?>
         </div></div>
     
-    </div>
+    </div></div>
     <!-- end four column wrapper -->
     
     <!-- start site middle wrapper -->
     <div id="site-middle-wrapper" class="wrappers"><div class="clearfix">
 
-        <div id="site-middle-one" class="grid_4 mywrapper_content"><div class="section">
+        <div id="site-middle-one" class="grid_4"><div class="section">
           <?php print render($page['site_middle_one']); ?>
         </div></div>
         
-        <div id="site-middle-two" class="grid_4 mywrapper_content"><div class="section">
+        <div id="site-middle-two" class="grid_4"><div class="section">
           <?php print render($page['site_middle_two']); ?>
         </div></div>
         
-        <div id="site-middle-three" class="grid_4 mywrapper_content"><div class="section">
+        <div id="site-middle-three" class="grid_4"><div class="section">
           <?php print render($page['site_middle_three']); ?>
         </div></div>
         
-    </div><div>
+    </div></div>
     <!-- end site middle wrapper -->
 
-    <div id="footer" class="grid_12"><div class="section">
+    <div id="footer" class="grid_12" ><div class="section">
       <?php print render($page['footer']); ?>
     </div></div> <!-- /.section, /#footer -->
 

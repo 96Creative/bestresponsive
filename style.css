@@ -1,4 +1,4 @@
-/* ----------------- 12 col grid ------------------ */
+/* ----------------- 12 col grid background ------------------ */
 
 #page-wrapper {
     background-image: url(images/960_grid_12_col.png);
@@ -22,3 +22,18 @@
 
 
 
+/* ------------------ Betu meretek ------------------- */
+
+.grid_3 .section{
+    font-size: 85%;
+    line-height: 130%;
+}
+
+.grid_3 h2 {
+    line-height: 130%;
+}
+
+.grid_4 .section {
+    font-size: 95%;
+    line-height: 140%;
+}

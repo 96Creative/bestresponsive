@@ -5,11 +5,12 @@ core = 7.x
 engine = phptemplate
 
 
-stylesheets[all][] = layout.css
+
 stylesheets[all][] = base.css
 stylesheets[all][] = grid.css
 stylesheets[all][] = responsive.css
 stylesheets[all][] = style.css
+stylesheets[all][] = layout.css
 
 
 regions[header] = Header

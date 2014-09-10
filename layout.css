@@ -3,11 +3,42 @@ body {
 }
 
 
-
-#site-middle-wrapper {
-    clear: both;
-}
-
 .messages {
     clear: both;
 }
+
+/* ---- Szinek a lathatosag miatt, kesobb torolni kell ---------- */
+
+.section {
+    background-color: yellow;
+}
+
+#four-column-wrapper .section {
+    background-color: pink;
+}
+
+#site-middle-wrapper .section {
+    background-color: beige;
+}
+
+#site-top-wrapper {
+    background-color: azure;
+    clear: both;
+}
+
+#site-top-wrapper .section {
+    background-color: aquamarine;
+}
+
+/* ------------------- Content, firs, second ---------------------- */
+
+.two-sidebars #content {
+    width: 48.0%;
+}
+
+/* ------------------- All wrappers ---------------------- */
+
+.wrappers {
+    clear: both;
+}
+
